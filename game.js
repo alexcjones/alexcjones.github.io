@@ -154,7 +154,7 @@ function drop(column){
     }
     else if(turn==42){
         document.getElementById("alert").style.color="rgb(0, 255, 255)";
-        document.getElementById("alert").innerHTML = "DRAW!!! NO IDEA HOW YOU DID THAT";
+        document.getElementById("alert").innerHTML = "DRAW!!! COME ON PROFESSOR. DID YOU THINK I HADNT PREPARED FOR THIS";
         document.getElementById("turn").style.color="rgb(0, 255, 255)";
         document.getElementById("turn").innerHTML="RESET TO PLAY AGAIN";
     }
