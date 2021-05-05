@@ -52,7 +52,7 @@ function drop(column){
                 board[i][j]="E";
             }
             
-        }
+        } 
     }
     let team="";
     if (turn%2==0){
@@ -301,7 +301,7 @@ function reset(){
             jstring=j.toString(10);
 
             address="r"+istring+"c"+jstring;
-            document.getElementById(address).style.backgroundColor="rgb(255, 255, 255)";
+            document.getElementById(address).style.backgroundColor="rgb(0, 0, 0)";
         }
     }
 }
