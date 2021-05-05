@@ -19,9 +19,10 @@ table{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width : 528pt;
-    height: 453pt;
-    background-color: blue;
+    width : 422.4pt;
+    height: 362.4pt;
+    
+    background-color: black;
     
 }
 th, td
@@ -31,6 +32,8 @@ th, td
 } 
 img
 {
+    height : 52%;
+    width:30%;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -39,14 +42,14 @@ img
 button.b1
 {
     position: fixed;
-    top: 85%;
-    left: 47.5%;
-    transform: translate(-50%, -90%);
-    transform: translate(-226.29pt,0pt);
+    top: 77.5%;
+    left: 34.91%;
+    transform: translate(-50%, -85%);
+    transform: translate(0pt,0pt);
     background-color: white; 
     color: black; 
     border: 2px solid #008CBA;
-    width: 60pt;
+    width: 55pt;
 }
 button.b2
 {
@@ -54,11 +57,11 @@ button.b2
     color: black; 
     border: 2px solid #f44336;
     position: fixed;
-    top: 85%;
-    left: 47.5%;
-    transform: translate(-50%, -90%);
-    transform: translate(-150.86pt,0pt);
-    width: 60pt;
+    top: 77.5%;
+    left: 39.19%;
+    transform: translate(-50%, -85%);
+    transform: translate(0pt,0pt);
+    width: 55pt;
     
 }
 button.b3
@@ -67,11 +70,11 @@ button.b3
     color: black; 
     border: 2px solid #008CBA;
     position: fixed;
-    top: 85%;
-    left: 47.5%;
-    transform: translate(-50%, -90%);
-    transform: translate(-75.4pt,0pt);
-    width: 60pt;
+    top: 77.5%;
+    left: 43.47%;
+    transform: translate(-47.5%, -85%);
+    transform: translate(0pt,0pt);
+    width: 55pt;
 }
 button.b4
 {
@@ -79,12 +82,12 @@ button.b4
     color: black; 
     border: 2px solid #f44336;
     position: fixed;
-    top: 85%;
-    left: 47.5%;
-    transform: translate(-50%, -90%);
+    top: 77.5%;
+    left: 47.75%;
+    transform: translate(-47.5%, -85%);
     transform: translate(0pt,0pt);
     
-    width: 60pt;
+    width: 55pt;
 }
 button.b5
 {
@@ -92,11 +95,11 @@ button.b5
     color: black; 
     border: 2px solid #008CBA;
     position: fixed;
-    top: 85%;
-    left: 47.5%;
-    transform: translate(-50%, -90%);
-    transform: translate(75.4pt,0pt);
-    width: 60pt;
+    top: 77.5%;
+    left: 52.036%;
+    transform: translate(-47.5%, -85%);
+    transform: translate(0pt,0pt);
+    width: 55pt;
 }
 button.b6
 {
@@ -104,11 +107,11 @@ button.b6
     color: black; 
     border: 2px solid #f44336;
     position: fixed;
-    top: 85%;
-    left: 47.5%;
-    transform: translate(-50%, -90%);
-    transform: translate(150.86pt,0pt);
-    width: 60pt;
+    top: 77.5%;
+    left: 56.322%;
+    transform: translate(-47.5%, -85%);
+    transform: translate(0pt,0pt);
+    width: 55pt;
 }
 button.b7
 {
@@ -116,11 +119,11 @@ button.b7
     color: black; 
     border: 2px solid #008CBA;
     position: fixed;
-    top: 85%;
-    left: 47.5%;
-    transform: translate(-50%, -90%);
-    transform: translate(226.29pt,0pt);
-    width: 60pt;
+    top: 77.5%;
+    left: 60.61%;
+    transform: translate(-47.5%, -85%);
+    transform: translate(0pt,0pt);
+    width: 55pt;
 }
 .button {
     background-color: #4CAF50; /* Green */
