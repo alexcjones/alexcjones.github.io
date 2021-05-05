@@ -15,13 +15,15 @@ h1
     grid-gap: 10px;
 }
 table{
-    position : fixed ;
-    top : 103pt;
-    left : 453pt;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width : 528pt;
     height: 453pt;
-    background-color:white;
-  }
+    background-color: black;
+    
+}
 th, td
 {
     border: 1px solid black;
@@ -29,15 +31,17 @@ th, td
 } 
 img
 {
-    position : fixed ;
-    top : 100pt;
-    left : 450pt;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 button.b1
 {
-    position :fixed;
-    top : 570pt ;
-    left : 462pt;
+    position: fixed;
+    top: 90%;
+    left: 32%;
+    transform: translate(0%, -90%);
     background-color: white; 
     color: black; 
     border: 2px solid #008CBA;
@@ -48,9 +52,10 @@ button.b2
     background-color: white; 
     color: black; 
     border: 2px solid #f44336;
-    position :fixed;
-    top : 570pt ;
-    left : 537pt;
+    position: fixed;
+    top: 90%;
+    left: 37.2%;
+    transform: translate(0%, -90%);
     width: 60pt;
     
 }
@@ -59,9 +64,10 @@ button.b3
     background-color: white; 
     color: black; 
     border: 2px solid #008CBA;
-    position :fixed;
-    top : 570pt ;
-    left : 612pt;
+    position: fixed;
+    top: 90%;
+    left: 42.6%;
+    transform: translate(0%, -90%);
     width: 60pt;
 }
 button.b4
@@ -69,9 +75,10 @@ button.b4
     background-color: white; 
     color: black; 
     border: 2px solid #f44336;
-    position :fixed;
-    top : 570pt ;
-    left : 687pt;
+    position: fixed;
+    top: 90%;
+    left: 47.6%;
+    transform: translate(0%, -90%);
     width: 60pt;
 }
 button.b5
@@ -79,9 +86,10 @@ button.b5
     background-color: white; 
     color: black; 
     border: 2px solid #008CBA;
-    position :fixed;
-    top : 570pt ;
-    left : 762pt;
+    position: fixed;
+    top: 90%;
+    left: 52.7%;
+    transform: translate(0%, -90%);
     width: 60pt;
 }
 button.b6
@@ -89,9 +97,10 @@ button.b6
     background-color: white; 
     color: black; 
     border: 2px solid #f44336;
-    position :fixed;
-    top : 570pt ;
-    left : 837pt;
+    position: fixed;
+    top: 90%;
+    left: 57.8%;
+    transform: translate(0%, -90%);
     width: 60pt;
 }
 button.b7
@@ -99,9 +108,10 @@ button.b7
     background-color: white; 
     color: black; 
     border: 2px solid #008CBA;
-    position :fixed;
-    top : 570pt ;
-    left : 912pt;
+    position: fixed;
+    top: 90%;
+    left: 62.9%;
+    transform: translate(0%, -90%);
     width: 60pt;
 }
 .button {
