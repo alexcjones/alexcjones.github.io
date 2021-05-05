@@ -5,11 +5,11 @@
 
 
 function addtoboard(row,column,team){
-        let r = row.toString(10);
-        let c= column.toString(10);
-        let address = "r"+r+"c"+c;
+    let r = row.toString(10);
+    let c= column.toString(10);
+    let address = "r"+r+"c"+c;
         
-       
+    if (document.getElementById("turn").innerHTML!="RESET TO PLAY AGAIN"){
         if (team=='R')
         {
             document.getElementById(address).style.backgroundColor='#ff0000'
@@ -17,6 +17,8 @@ function addtoboard(row,column,team){
         else{
             document.getElementById(address).style.backgroundColor = '#ffff00'
         }
+    }
+        
 }
 
 
@@ -57,15 +59,17 @@ function drop(column){
     let team="";
     if (turn%2==0){
         team = "R";
+        
     }
     else{
         team = "Y";
+        
     }
     
 
     //find row to place in
     //color the board
-    let r=0;
+    let r=-1;
     for (let i = 0 ; i < 6 ; i++){
         if (board[i][column]=="E"){
             addtoboard(i,column,team);
@@ -75,10 +79,27 @@ function drop(column){
         }
        
     }
+    turn+=1;
+    if (r!=-1){
+        
+        if (document.getElementById("turn").innerHTML!="RESET TO PLAY AGAIN"){
+            if (team=="R"){
+            
+                document.getElementById("turn").style.color="rgb(255, 255, 0)";
+                document.getElementById("turn").innerHTML="YELLOW PLAYER 2";
+            }
+            else{
+            
+                document.getElementById("turn").style.color="rgb(255, 0, 0)";
+                document.getElementById("turn").innerHTML="RED PLAYER 1";
+            }
+        }
+    }
     let win = checkforwin(r,column,team,board);
     console.log("----------------TEST CONCLUDE--------------")
     let str="";
-    if (win){
+    
+    if (win && document.getElementById("turn").innerHTML!="RESET TO PLAY AGAIN"){
         if (team=='R'){
             document.getElementById("alert").style.color="rgb(255, 0, 0)";
             str= "PLAYER 1 WINS!!!";
@@ -87,7 +108,8 @@ function drop(column){
             document.getElementById("alert").style.color="rgb(255, 255, 0)";
             str= "PLAYER 2 WINS!!!";
         }
-        
+        document.getElementById("reset").disabled=true;
+        document.getElementById("start").disabled=true;
         for (let i =0; i<5;i++){
             setTimeout(function(){
                 console.log("no show function");
@@ -121,19 +143,22 @@ function drop(column){
                         }
                     }
                 }
+                if (i==4){
+                    document.getElementById("reset").disabled=false;
+                    document.getElementById("start").disabled=false;
+                }
             }, ((i*1000)+500));
         }
+        document.getElementById("turn").style.color="rgb(0, 255, 255)";
+        document.getElementById("turn").innerHTML="RESET TO PLAY AGAIN";
     }
-    else{
-        if (team=="R"){
-            document.getElementById("turn").style.color="rgb(255, 255, 0)";
-            document.getElementById("turn").innerHTML="YELLOW PLAYER 2";
-        }
-        else{
-            document.getElementById("turn").style.color="rgb(255, 0, 0)";
-            document.getElementById("turn").innerHTML="RED PLAYER 1";
-        }
+    else if(turn==42){
+        document.getElementById("alert").style.color="rgb(0, 255, 255)";
+        document.getElementById("alert").innerHTML = "DRAW!!! NO IDEA HOW YOU DID THAT";
+        document.getElementById("turn").style.color="rgb(0, 255, 255)";
+        document.getElementById("turn").innerHTML="RESET TO PLAY AGAIN";
     }
+    
 }
 function checkforwin(row,col,team,board){
     let checkur= recursivecheck("UR",0,row,col,0,board,team,row,col);
