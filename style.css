@@ -1,91 +1,185 @@
-<!DOCTYPE html>
-<html>
-
-
-<head>
+body
+{
+    background-color: darkgray;
+}
+h1
+{
+    font-size : 36pt;
+    font : helvetica;
+    color:red;
+}
+.container {
+    display: grid;
+    grid-template: 1.6em 1.6em 1.6em / 1fr 1fr 1fr;
+    grid-template: repeat(3, 1.6em) / repeat(3, 1fr);
+    grid-gap: 10px;
+}
+table{
+    height : 50%;
+    width:29%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     
-    <link href="style.css"
-    rel="stylesheet"
-    type="text/css"/>
-    <center><h1>Connect 4</h1></center>
+    background-color: black;
     
-</head>
-<body>
-  
-  <center>
-      <table sytle = "width : 772pt">
-      <tr>
-        <td id = "r5c0"></td>
-        <td id = "r5c1"></td>
-        <td id = "r5c2"></td>
-        <td id = "r5c3"></td>
-        <td id = "r5c4"></td>
-        <td id = "r5c5"></td>
-        <td id = "r5c6"></td>
-      </tr>
-      <tr>
-        <td id = "r4c0"></td>
-        <td id = "r4c1"></td>
-        <td id = "r4c2"></td>
-        <td id = "r4c3"></td>
-        <td id = "r4c4"></td>
-        <td id = "r4c5"></td>
-        <td id = "r4c6"></td>
-      </tr>
-      <tr>
-        <td id = "r3c0"></td>
-        <td id = "r3c1"></td>
-        <td id = "r3c2"></td>
-        <td id = "r3c3"></td>
-        <td id = "r3c4"></td>
-        <td id = "r3c5"></td>
-        <td id = "r3c6"></td>
-      </tr>
-      <tr>
-        <td id = "r2c0"></td>
-        <td id = "r2c1"></td>
-        <td id = "r2c2"></td>
-        <td id = "r2c3"></td>
-        <td id = "r2c4"></td>
-        <td id = "r2c5"></td>
-        <td id = "r2c6"></td>
-      </tr>
-      <tr>
-        <td id= "r1c0"></td>
-        <td id= "r1c1"></td>
-        <td id= "r1c2"></td>
-        <td id= "r1c3"></td>
-        <td id= "r1c4"></td>
-        <td id= "r1c5"></td>
-        <td id= "r1c6"></td>
-      </tr>
-      <tr>
-        <td id= "r0c0"></td>
-        <td id= "r0c1"></td>
-        <td id= "r0c2"></td>
-        <td id= "r0c3"></td>
-        <td id= "r0c4"></td>
-        <td id= "r0c5"></td>
-        <td id= "r0c6"></td>
-      </tr>
-  
-    </table>
-  </center>
-  <center><img src="connect4board.png" id="board" width="722pt" height="622pt"></center>
+}
+th, td
+{
+    border: 1px solid black;
 
-  <button id = "start">Start</button>
-  <button id="reset">Reset</button>
-  <button class = "b1" name = "b1" id = "b1">Drop</button>
-  <button class = "b2" name = "b2" id = "b2">Drop</button>
-  <button class = "b3" name = "b3" id = "b3">Drop</button>
-  <button class = "b4" name = "b4" id = "b4">Drop</button>
-  <button class = "b5" name = "b5" id = "b5">Drop</button>
-  <button class = "b6" name = "b6" id = "b6">Drop</button>
-  <button class = "b7" name = "b7" id = "b7">Drop</button>
-  <span id="alert"></span>
-  <p id ="turn"></p>
-  
+} 
+img
+{
+    height : 52%;
+    width:30%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+button.b1
+{
+    position: fixed;
+    top: 77.5%;
+    left: 34.91%;
+    transform: translate(-50%, -85%);
+    transform: translate(0pt,0pt);
+    background-color: white; 
+    color: black; 
+    border: 2px solid #008CBA;
+    width: 4%;
+}
+button.b2
+{
+    background-color: white; 
+    color: black; 
+    border: 2px solid #f44336;
+    position: fixed;
+    top: 77.5%;
+    left: 39.19%;
+    transform: translate(-50%, -85%);
+    transform: translate(0pt,0pt);
+    width: 4%;
+    
+}
+button.b3
+{
+    background-color: white; 
+    color: black; 
+    border: 2px solid #008CBA;
+    position: fixed;
+    top: 77.5%;
+    left: 43.47%;
+    transform: translate(-47.5%, -85%);
+    transform: translate(0pt,0pt);
+    width: 4%;
+}
+button.b4
+{
+    background-color: white; 
+    color: black; 
+    border: 2px solid #f44336;
+    position: fixed;
+    top: 77.5%;
+    left: 47.75%;
+    transform: translate(-47.5%, -85%);
+    transform: translate(0pt,0pt);
+    
+    width: 4%;
+}
+button.b5
+{
+    background-color: white; 
+    color: black; 
+    border: 2px solid #008CBA;
+    position: fixed;
+    top: 77.5%;
+    left: 52.036%;
+    transform: translate(-47.5%, -85%);
+    transform: translate(0pt,0pt);
+    width: 4%;
+}
+button.b6
+{
+    background-color: white; 
+    color: black; 
+    border: 2px solid #f44336;
+    position: fixed;
+    top: 77.5%;
+    left: 56.322%;
+    transform: translate(-47.5%, -85%);
+    transform: translate(0pt,0pt);
+    width: 4%;
+}
+button.b7
+{
+    background-color: white; 
+    color: black; 
+    border: 2px solid #008CBA;
+    position: fixed;
+    top: 77.5%;
+    left: 60.61%;
+    transform: translate(-47.5%, -85%);
+    transform: translate(0pt,0pt);
+    width: 4%;
+}
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    
+  }
 
-  <script type="text/javascript" src="game.js"></script>
-</body>
-</html>
+
+  .b1:hover{
+    background-color: #008CBA;
+    color: white;
+  }
+  .b2:hover{
+    background-color: #f44336;
+    color: white;
+}
+.b3:hover{
+    background-color: #008CBA;
+    color: white;
+}
+.b4:hover{
+    background-color: #f44336;
+    color: white;
+}
+.b5:hover{
+    background-color: #008CBA;
+    color: white;
+}
+.b6:hover{
+    background-color: #f44336;
+    color: white;
+}
+.b7:hover{
+    background-color: #008CBA;
+    color: white;
+}
+span
+{
+   
+    position: fixed;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -90%);
+    font: Arial;
+    font-size : 24pt;
+}
+p
+{
+    font-size:36pt;
+}
