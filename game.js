@@ -88,7 +88,7 @@ function drop(column){
             str= "PLAYER 2 WINS!!!";
         }
         
-        for (let i =0; i<7;i++){
+        for (let i =0; i<5;i++){
             setTimeout(function(){
                 console.log("no show function");
                 document.getElementById("alert").innerHTML = "";
