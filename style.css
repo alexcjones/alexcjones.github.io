@@ -1,6 +1,6 @@
 body
 {
-    background-color:black;
+    background-color: darkgray;
 }
 h1
 {
@@ -22,7 +22,7 @@ table{
     left: 50%;
     transform: translate(-50%, -50%);
     
-    background-color: grey;
+    background-color: black;
     
 }
 th, td
