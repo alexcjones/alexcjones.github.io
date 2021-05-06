@@ -310,9 +310,20 @@ document.getElementById("start").addEventListener("click", function() {
     reset();
     document.getElementById("turn").style.color="rgb(255, 0, 0)";
     document.getElementById("turn").innerHTML = "RED PLAYER 1";
+    document.getElementById("reset").disabled=false;
+    document.getElementById("b1").disabled=false;
+    document.getElementById("b2").disabled=false;
+    document.getElementById("b3").disabled=false;
+    document.getElementById("b4").disabled=false;
+    document.getElementById("b5").disabled=false;
+    document.getElementById("b6").disabled=false;
+    document.getElementById("b7").disabled=false;
+    document.getElementById("start").disabled=true;
+    document.getElementById("sttxt").innerHTML="";
 });
 document.getElementById("reset").addEventListener("click", function() {
     reset();
+    document.getElementById("sttxt").innerHTML="PRESS START TO BEGIN";
 });
 function reset(){
     document.getElementById("turn").innerHTML = "";
@@ -329,6 +340,15 @@ function reset(){
             document.getElementById(address).style.backgroundColor="rgb(0, 0, 0)";
         }
     }
+    console.log("hello there");
+    document.getElementById("b1").disabled=true;
+    document.getElementById("b2").disabled=true;
+    document.getElementById("b3").disabled=true;
+    document.getElementById("b4").disabled=true;
+    document.getElementById("b5").disabled=true;
+    document.getElementById("b6").disabled=true;
+    document.getElementById("b7").disabled=true;
+    document.getElementById("start").disabled=false;
 }
 
 
