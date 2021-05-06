@@ -109,7 +109,7 @@ function drop(column){
             str= "PLAYER 2 WINS!!!";
         }
         document.getElementById("reset").disabled=true;
-        document.getElementById("start").disabled=true;
+        
         for (let i =0; i<5;i++){
             setTimeout(function(){
                 console.log("no show function");
@@ -145,7 +145,7 @@ function drop(column){
                 }
                 if (i==4){
                     document.getElementById("reset").disabled=false;
-                    document.getElementById("start").disabled=false;
+                    
                 }
             }, ((i*1000)+500));
         }
@@ -340,7 +340,7 @@ function reset(){
             document.getElementById(address).style.backgroundColor="rgb(0, 0, 0)";
         }
     }
-   
+    console.log("hello there");
     document.getElementById("b1").disabled=true;
     document.getElementById("b2").disabled=true;
     document.getElementById("b3").disabled=true;
