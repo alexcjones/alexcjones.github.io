@@ -340,7 +340,7 @@ function reset(){
             document.getElementById(address).style.backgroundColor="rgb(0, 0, 0)";
         }
     }
-    console.log("hello there");
+   
     document.getElementById("b1").disabled=true;
     document.getElementById("b2").disabled=true;
     document.getElementById("b3").disabled=true;
